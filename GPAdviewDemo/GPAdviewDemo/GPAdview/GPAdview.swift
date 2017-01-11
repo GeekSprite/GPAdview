@@ -21,7 +21,7 @@ class GPAdview: UIView{
     
     private var TY_TransitionDuration = 0.7
     private lazy var KMainWindow: UIWindow = {
-        return (UIApplication.shared.delegate as! AppDelegate).window
+        return  (UIApplication.shared.delegate?.window)!
     }()!
     
     private lazy var countTimer: Timer = {
